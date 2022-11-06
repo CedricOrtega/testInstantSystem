@@ -1,5 +1,7 @@
 # testInstantSystem
 
+Temps consacré à l'exercice : 4h30
+
 Pour développer l'API permettant de communiquer avec l'API soumis par la ville de Poitiers https://data.grandpoitiers.fr/api/records/1.0 .
 J'ai décidé d'utiliser le client REST déclaratif OpenFeign.
 Il me permet d'appeler l'API nécessaire pour le test, mais aussi de rendre générique mon appel GET, qui me permettra en écrivant une seule méthode d'appeler une API d'une autre ville.
