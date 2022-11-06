@@ -1,6 +1,6 @@
 # testInstantSystem
 
-Temps consacré à l'exercice : 4h30
+Temps consacré à l'exercice : 4h30 (temps débuté une fois la génération du projet avec spring initializr fait / écriture du README non pris en compte)
 
 Pour développer l'API permettant de communiquer avec l'API soumis par la ville de Poitiers https://data.grandpoitiers.fr/api/records/1.0 .
 J'ai décidé d'utiliser le client REST déclaratif OpenFeign.
