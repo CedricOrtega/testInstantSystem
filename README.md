@@ -10,7 +10,7 @@ Je mappe par la suite la réponse de l'API avec un DTO structuré qui me permett
 ![image](https://user-images.githubusercontent.com/32506449/200187520-8aa1131a-1e86-4815-9ec4-a6e90da97d25.png)
 
 En ce qui concerne la suite.
-J'ai décidé à l'aide d'une méthode présente dans une classe technique. De trié par ordre décroissant la distance des parkings selon la position actuelle de l'utilisateur.
+J'ai décidé à l'aide d'une méthode présente dans une classe technique. De trié par ordre croissant la distance des parkings selon la position actuelle de l'utilisateur.
 En parlant de la position en temps réel de l'utilisateur.
 Je suis parti du principe que l'on envoie en requête à notre API la position WGS84 actuelle de l'utilisateur.
 Mais aussi le nom de la ville dans laquelle il est actuellement.
@@ -42,6 +42,18 @@ Documentation :
 
 Swagger est utilisé pour permettre de documenter l'API mise en place et pouvoir la tester elle est disponible à cet URL : http://{host}:8080/swagger-ui/index.html.
 Pour permettre une génération d'une JavaDoc, des commentaires ont été faits au niveau des classes et des méthodes.
+
+Structure du projet :
+
+		/controller
+		/service : contenant le management permettant de savoir quel Open API utilisé selon la ville.
+		/processor : contenant le traitement métiers pour une ville - étant donnée que chaque open data possèdent des formats différents.
+		/connector : contenant toutes nos dépendances externes (ici les open datas). Un appel aux open data générique, 1 seule méthode permet d'appeler n'importe quel open data.
+		/dto
+		/constant
+		/enumeration : contient toutes les villes gérés par l'API
+		/exception
+		/helper: contenant les méthodes technique utiles (convertir WGS84 en mètre, trié une liste selon un DTO précis par distance croissant).
 
 Points d'amélioration importante:
 
